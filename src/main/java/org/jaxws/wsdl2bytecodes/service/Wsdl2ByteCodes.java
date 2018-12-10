@@ -123,6 +123,9 @@ public class Wsdl2ByteCodes {
 		cmdList.add("-s");
 		cmdList.add(outputDir);
 		cmdList.add("-d");
+		//for working with Oracle Service bus generated wsdl's
+		cmdList.add("-extension");
+
 		cmdList.add(outputDir);
 		// We will do the compilation manually, otherwise there may be problems
 		// if there are multiple JDKS installed. wsimport doesn't allow you to
